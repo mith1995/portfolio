@@ -1,5 +1,5 @@
 // All backend calls live here. Change VITE_API_URL in .env after deploying.
-export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+export const API_URL = import.meta.env.API_URL || "http://localhost:8000";
 
 async function request(path, options) {
   const response = await fetch(`${API_URL}${path}`, options);
